@@ -56,10 +56,3 @@ npm run dev
 ```
 
 Frontend disponível em `http://localhost:3000`.
-
-### Build de produção
-
-```bash
-npm run build
-npm start
-```
