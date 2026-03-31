@@ -19,8 +19,8 @@ export default function TransferForm({ onSuccess }) {
     try {
       const res = await api.findUserByEmail(email)
       setReceiver(res.data)
-    } catch {
-      setError('Usuário não encontrado com esse email.')
+    } catch (err) {
+      setError(err.message)
     } finally {
       setSearching(false)
     }
